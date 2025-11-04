@@ -1,0 +1,6 @@
+framework module Pods_RoadKard_App_RoadKard_AppUITests {
+  umbrella header "Pods-RoadKard_App-RoadKard_AppUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

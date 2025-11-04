@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SF-Pro.ttf">
+            <string>SFPro-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ChatViewCell" rowHeight="73" id="KGk-i7-Jjw" customClass="ChatViewCell" customModule="RoadKard_App" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="73"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="73"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Carlos M" translatesAutoresizingMaskIntoConstraints="NO" id="FMJ-H9-LZV">
+                        <rect key="frame" x="251" y="7" width="59" height="59"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="59" id="m1M-uP-fMe"/>
+                            <constraint firstAttribute="width" constant="59" id="zrf-SG-yri"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lKy-gY-dX7" customClass="PaddingLabel" customModule="RoadKard_App" customModuleProvider="target">
+                        <rect key="frame" x="10" y="12" width="231" height="54"/>
+                        <color key="backgroundColor" red="0.34509803919999998" green="0.77647058820000003" blue="0.56078431370000004" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                        <fontDescription key="fontDescription" name="SFPro-Regular" family="SF Pro" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="topInset">
+                                <real key="value" value="5"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="bottomInset">
+                                <real key="value" value="5"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="leftInset">
+                                <real key="value" value="10"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="rightInset">
+                                <real key="value" value="10"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadiusV">
+                                <real key="value" value="8"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" red="0.10196078431372549" green="0.10196078431372549" blue="0.10196078431372549" alpha="1" colorSpace="calibratedRGB"/>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="FMJ-H9-LZV" secondAttribute="trailing" constant="10" id="1Kw-xR-BdJ"/>
+                    <constraint firstAttribute="bottom" secondItem="FMJ-H9-LZV" secondAttribute="bottom" constant="7" id="2H3-fQ-HiQ"/>
+                    <constraint firstItem="FMJ-H9-LZV" firstAttribute="leading" secondItem="lKy-gY-dX7" secondAttribute="trailing" constant="10" id="6ox-Yj-zVX"/>
+                    <constraint firstAttribute="bottom" secondItem="lKy-gY-dX7" secondAttribute="bottom" constant="7" id="B2H-HF-4HE"/>
+                    <constraint firstItem="FMJ-H9-LZV" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="7" id="Wt5-jb-o69"/>
+                    <constraint firstItem="lKy-gY-dX7" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="12" id="alg-PM-WJd"/>
+                    <constraint firstItem="lKy-gY-dX7" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="wco-cv-0Fh"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="label" destination="lKy-gY-dX7" id="e5o-Hj-3Nb"/>
+                <outlet property="profile" destination="FMJ-H9-LZV" id="WGP-Eg-eLd"/>
+            </connections>
+            <point key="canvasLocation" x="140.57971014492756" y="92.745535714285708"/>
+        </tableViewCell>
+    </objects>
+    <designables>
+        <designable name="lKy-gY-dX7">
+            <size key="intrinsicContentSize" width="57" height="27.5"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="Carlos M" width="59" height="59"/>
+    </resources>
+</document>

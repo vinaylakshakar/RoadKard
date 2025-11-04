@@ -1,0 +1,6 @@
+framework module Pods_RoadKard_App {
+  umbrella header "Pods-RoadKard_App-umbrella.h"
+
+  export *
+  module * { export * }
+}
